@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(224, 209, 245);
+    padding: 23px;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+.container {
+    padding-left: 182px;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    max-width: 80vw;
+    margin: auto;
+    background-color: rgb(125 190 248);
+}
+
+.container h1,
+h2 {
+    margin: 23px 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label {
+    font-size: 25px;
+}
+
+.container form input[type='number'],
+select,
+label {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background: #e0d0f5;
+    color: black;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.output {
+    display: none;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid rgb(251, 137, 137);
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(252, 229, 246);
+}
+
+.output table th{
+    padding: 3px;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    nav {
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    div.logo {
+        margin: 0 1em;
+        font-size: 20px;
+    }
+
+    .container {
+        padding-left: 5vw;
+    }
+
+    .container h1,
+    h2 {
+        margin: 1em 0;
+    }
+
+    .container form label {
+        font-size: 1.2em;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        width: 7em;
+        font-size: 16px;
+    }
+
+    .output table {
+        font-size: 1.2em;
+    }
+}
